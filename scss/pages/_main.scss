@@ -1,0 +1,63 @@
+@use "../abstracts/variables";
+@use "../layout/grid";
+
+.about__col {
+  text-align: center;
+}
+
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card__link {
+  overflow: hidden;
+}
+
+.card {
+  padding: 5rem 6rem;
+  text-align: center;
+
+  color: #fff;
+
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card--one {
+  background-image: linear-gradient(
+      variables.$gradient-light,
+      variables.$gradient-dark
+    ),
+    url(../../img/menu_galerie.JPG);
+}
+.card--two {
+  background-image: linear-gradient(
+      variables.$gradient-light,
+      variables.$gradient-dark
+    ),
+    url(../../img/menu_rezervace.JPG);
+}
+.card--three {
+  background-image: linear-gradient(
+      variables.$gradient-light,
+      variables.$gradient-dark
+    ),
+    url(../../img/menu_cenik.JPG);
+}
+
+.additional-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.info__image img {
+  max-width: 100%;
+}

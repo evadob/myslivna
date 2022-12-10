@@ -1,0 +1,42 @@
+@use "../abstracts/variables";
+@use "../layout/grid";
+
+.footer-col {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.footer__heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: variables.$primary-dark;
+
+  &:visited {
+    color: variables.$primary-dark;
+  }
+}
+
+.socials__links {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__cta {
+  border: 1px solid variables.$primary-dark;
+  padding: 0.5rem 1rem;
+}

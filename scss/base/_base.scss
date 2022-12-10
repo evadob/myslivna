@@ -1,0 +1,25 @@
+@use "../abstracts/variables";
+
+body {
+  color: variables.$primary-dark;
+  font-family: variables.$font-primary;
+  letter-spacing: 0.05rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}

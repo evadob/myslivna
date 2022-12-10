@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: "Forum", cursive;
+  letter-spacing: 0.05rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--1-col {
+  grid-template-columns: 1fr;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+  font-size: 1.2rem;
+  color: #444;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav__list a {
+  color: #444;
+  text-decoration: none;
+}
+.nav__list a:visited {
+  color: #444;
+}
+
+.img-logo {
+  width: 1.6rem;
+}
+
+.nav__cta {
+  border: 1px solid #444;
+  padding: 3px 6px;
+}
+
+.btn__mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav__icon {
+  font-size: 2rem;
+  color: #444;
+}
+
+.mobile-nav__icon[name=close-outline] {
+  display: none;
+}
+
+.hero {
+  min-height: 60vh;
+  background-image: linear-gradient(rgba(3, 19, 14, 0.6), rgba(40, 105, 74, 0.084)), url(../../img/myslivna_front.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  position: relative;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.footer-col {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.footer__heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #444;
+}
+.footer a:visited {
+  color: #444;
+}
+
+.socials__links {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__cta {
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+}
+
+.about__col {
+  text-align: center;
+}
+
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card__link {
+  overflow: hidden;
+}
+
+.card {
+  padding: 5rem 6rem;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card--one {
+  background-image: linear-gradient(rgba(126, 126, 126, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/menu_galerie.JPG);
+}
+
+.card--two {
+  background-image: linear-gradient(rgba(126, 126, 126, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/menu_rezervace.JPG);
+}
+
+.card--three {
+  background-image: linear-gradient(rgba(126, 126, 126, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/menu_cenik.JPG);
+}
+
+.additional-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.info__image img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
