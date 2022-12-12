@@ -10,8 +10,25 @@
 }
 
 .footer__cta {
-  border: 1px solid variables.$primary-dark;
+  display: inline-block;
   padding: 0.5rem 1rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid variables.$primary-dark;
+}
+
+.btn__reservation {
+  display: block;
+  border: 1px solid variables.$primary-dark;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  &:hover {
+    background-color: variables.$primary-dark;
+    color: #fff !important;
+  }
+  &:visited {
+    color: variables.$primary-dark;
+  }
 }
 
 // mobile navigation

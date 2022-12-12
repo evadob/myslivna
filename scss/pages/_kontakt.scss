@@ -1,0 +1,56 @@
+@use "../abstracts/variables";
+
+//  contact
+.contact {
+  line-height: 1.4rem;
+  max-width: 60%;
+  font-size: 1.1rem;
+}
+
+.contact__2-cols {
+  margin: 5rem auto 3rem auto;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.list__heading--small {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+// map
+.travel {
+  text-align: center;
+}
+
+// travel
+.travel__heading::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.09rem;
+  background-color: variables.$primary-dark;
+  margin: 0.5rem auto;
+}
+
+.travel__text {
+  margin: 1rem auto;
+}
+
+.travel__greetings {
+  font-style: italic;
+}
+
+// map
+.map {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+// invoice contact
+.invoice-row {
+  margin-bottom: 8rem;
+}
+.col--aligned {
+  align-self: center;
+}

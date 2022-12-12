@@ -24,10 +24,19 @@ li {
   list-style: none;
 }
 
+p {
+  letter-spacing: 0.8px;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+
+.page__heading {
+  text-align: center;
+  margin: 5rem auto 2rem;
 }
 
 .nav__cta {
@@ -40,8 +49,25 @@ li {
 }
 
 .footer__cta {
-  border: 1px solid #444;
+  display: inline-block;
   padding: 0.5rem 1rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid #444;
+}
+
+.btn__reservation {
+  display: block;
+  border: 1px solid #444;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.btn__reservation:hover {
+  background-color: #444;
+  color: #fff !important;
+}
+.btn__reservation:visited {
+  color: #444;
 }
 
 .btn__mobile-nav {
@@ -270,7 +296,53 @@ li {
   max-width: 100%;
 }
 
-.gallery__heading {
+.contact {
+  line-height: 1.4rem;
+  max-width: 60%;
+  font-size: 1.1rem;
+}
+
+.contact__2-cols {
+  margin: 5rem auto 3rem auto;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.list__heading--small {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.travel {
   text-align: center;
-  margin: 5rem auto 2rem;
+}
+
+.travel__heading::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.09rem;
+  background-color: #444;
+  margin: 0.5rem auto;
+}
+
+.travel__text {
+  margin: 1rem auto;
+}
+
+.travel__greetings {
+  font-style: italic;
+}
+
+.map {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.invoice-row {
+  margin-bottom: 8rem;
+}
+
+.col--aligned {
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
