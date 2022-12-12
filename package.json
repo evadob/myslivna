@@ -1,0 +1,24 @@
+{
+  "name": "myslivna",
+  "version": "1.0.0",
+  "description": "### Projekt pro kurz Czechitas Staň se kodérkou, podzim 2022",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evadob/myslivna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evadob/myslivna/issues"
+  },
+  "homepage": "https://github.com/evadob/myslivna#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

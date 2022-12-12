@@ -1,0 +1,16 @@
+@use "../abstracts/variables";
+
+.gallery {
+  gap: 3rem;
+  margin: 5rem auto;
+}
+
+.gallery__item img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery__heading {
+  text-align: center;
+  margin: 5rem auto 2rem;
+}

@@ -34,9 +34,12 @@
 .footer__icons {
   display: flex;
   gap: 1rem;
+
+  margin-top: 1rem;
 }
 
-.footer__cta {
-  border: 1px solid variables.$primary-dark;
-  padding: 0.5rem 1rem;
+.footer__copyright {
+  grid-column: 1 / -1;
+  margin: 1rem auto;
+  font-size: 0.8rem;
 }

@@ -13,6 +13,7 @@ body {
   color: #444;
   font-family: "Forum", cursive;
   letter-spacing: 0.05rem;
+  line-height: 1.2rem;
 }
 
 a {
@@ -23,14 +24,40 @@ li {
   list-style: none;
 }
 
-section {
-  margin-bottom: 5rem;
-}
-
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+
+.nav__cta {
+  border: 1px solid #444;
+  padding: 4px 8px;
+}
+.nav__cta:hover {
+  background-color: #444;
+  color: #fff !important;
+}
+
+.footer__cta {
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+}
+
+.btn__mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav__icon {
+  font-size: 2rem;
+  color: #444;
+}
+
+.mobile-nav__icon[name=close-outline] {
+  display: none;
 }
 
 .grid {
@@ -58,8 +85,9 @@ section {
 }
 
 .nav__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
   align-items: center;
   margin: 1rem 3rem;
   font-size: 1.2rem;
@@ -79,30 +107,9 @@ section {
   width: 1.6rem;
 }
 
-.nav__cta {
-  border: 1px solid #444;
-  padding: 3px 6px;
-}
-
-.btn__mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: none;
-}
-
-.mobile-nav__icon {
-  font-size: 2rem;
-  color: #444;
-}
-
-.mobile-nav__icon[name=close-outline] {
-  display: none;
-}
-
 .hero {
   min-height: 60vh;
-  background-image: linear-gradient(rgba(3, 19, 14, 0.6), rgba(40, 105, 74, 0.084)), url(../../img/myslivna_front.JPG);
+  background-image: linear-gradient(rgba(3, 19, 14, 0.6), rgba(40, 105, 74, 0.084)), url(../img/myslivna_front.JPG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,11 +157,50 @@ section {
 .footer__icons {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
-.footer__cta {
-  border: 1px solid #444;
-  padding: 0.5rem 1rem;
+.footer__copyright {
+  grid-column: 1/-1;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+}
+
+.section__hero {
+  margin-bottom: 2.5rem;
+}
+
+.section__about,
+.section__link-cards,
+.section__info {
+  margin-bottom: 5rem;
+}
+
+.about__heading {
+  margin-bottom: 1.2rem;
+}
+
+.about__heading::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.09rem;
+  background-color: #444;
+  margin: 1rem auto;
+}
+
+.section__about {
+  font-size: 1.2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.section__about p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.section__info p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .about__col {
@@ -173,6 +219,7 @@ section {
 .card {
   padding: 5rem 6rem;
   text-align: center;
+  font-size: 1.4rem;
   color: #fff;
   background-size: cover;
   background-position: center;
@@ -196,11 +243,34 @@ section {
 
 .additional-col {
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 3rem;
   justify-items: center;
   align-items: center;
+  max-width: 80%;
+}
+
+.info__text {
+  padding: 2rem;
+  font-size: 1.2rem;
 }
 
 .info__image img {
   max-width: 100%;
+}
+
+.gallery {
+  gap: 3rem;
+  margin: 5rem auto;
+}
+
+.gallery__item img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery__heading {
+  text-align: center;
+  margin: 5rem auto 2rem;
 }/*# sourceMappingURL=style.css.map */

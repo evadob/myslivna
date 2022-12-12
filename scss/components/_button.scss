@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+.nav__cta {
+  border: 1px solid variables.$primary-dark;
+  padding: 4px 8px;
+  &:hover {
+    background-color: variables.$primary-dark;
+    color: #fff !important;
+  }
+}
+
+.footer__cta {
+  border: 1px solid variables.$primary-dark;
+  padding: 0.5rem 1rem;
+}
+
+// mobile navigation
+.btn__mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.mobile-nav__icon {
+  font-size: 2rem;
+  color: variables.$primary-dark;
+}
+.mobile-nav__icon[name="close-outline"] {
+  display: none;
+}
