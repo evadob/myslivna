@@ -1,191 +1,136 @@
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Penzion Myslivna</title>
-  </head>
+---
+layout: layouts/template.njk
+title: Penzion Myslivna
+---
 
-  <body>
-    <!-- header -->
-    <header class="header">
-      <nav class="header__nav container">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="#">Úvod</a></li>
-          <li><a class="nav__link" href="#">Ubytování</a></li>
-          <li><a class="nav__link" href="#">Galerie</a></li>
-          <li>
-            <a class="nav__link nav__logo" href="#"
-              ><img class="img-logo" src="img/logo.svg" alt=""
-            /></a>
-          </li>
-          <li><a class="nav__link" href="#">Ceník</a></li>
-          <li><a class="nav__link" href="#">Kontakt</a></li>
-          <li><a class="nav__link nav__cta" href="#">Rezervace</a></li>
-        </ul>
-      </nav>
+<!-- hero -->
+<section class="section__hero">
+  <div class="hero container">
+    <h1 class="hero__heading">Myslivna</h1>
+    <!-- <div class="hero__text-box">Rodinný penzion na úpatí Černé hory</div> -->
+  </div>
+</section>
 
-      <button class="btn__mobile-nav">
-        <ion-icon class="mobile-nav__icon" name="menu-outline"></ion-icon>
-        <ion-icon class="mobile-nav__icon" name="close-outline"></ion-icon>
-      </button>
-    </header>
+<!-- about -->
+<section class="section__about">
+  <div class="container grid">
+    <div class="about__col">
+      <h3 class="about__heading">O nás</h3>
+      <p class="about__text">
+        Penzion Myslivna se nachází na úpatí Černé hory nedaleko obce Černý Důl.
+        Myslivna byla postavena okolo roku 1850 hraběcím rodem Czernin-Morzin a
+        v roce 2007 byl zrekonstruována na malý horský penzion.
+      </p>
+      <p class="about__text">
+        Penzion je vybaven vnitřním bazénem, dětskou hernou, přednáškovou
+        místností a vším, co je potřeba pro pohodovou rodinnou dovolenou.
+      </p>
+      <p class="about__text">
+        Velká zahrada, prolézačky pro děti, venkovní i vnitřní bazén, sauna a
+        hlavně okolní příroda Krkonošských hor podtrhují neodolatelnou atmosféru
+        toho všeho tady mami pomoc zformuluj mi to.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- hero -->
-    <section class="section__hero">
-      <div class="hero container">
-        <h1 class="hero__heading">Myslivna</h1>
-        <!-- <div class="hero__text-box">Rodinný penzion na úpatí Černé hory</div> -->
-      </div>
-    </section>
+<!-- those link cards -->
+<section class="section__link-cards">
+  <div class="container grid cards">
+    <a class="card__link" href="#"><div class="card card--one">Galerie</div></a>
+    <a class="card__link" href="#"
+      ><div class="card card--two">Rezervace</div></a
+    >
+    <a class="card__link" href="#"><div class="card card--three">Ceník</div></a>
+  </div>
+</section>
 
-    <!-- about -->
-    <section class="section__about">
-      <div class="container grid">
-        <div class="about__col">
-          <h3 class="about__heading">O nás</h3>
-          <p class="about__text">
-            Penzion Myslivna se nachází na úpatí Černé hory nedaleko obce Černý
-            Důl. Myslivna byla postavena okolo roku 1850 hraběcím rodem
-            Czernin-Morzin a v roce 2007 byl zrekonstruována na malý horský
-            penzion.
-          </p>
-          <p class="about__text">
-            Penzion je vybaven vnitřním bazénem, dětskou hernou, přednáškovou
-            místností a vším, co je potřeba pro pohodovou rodinnou dovolenou.
-          </p>
-          <p class="about__text">
-            Velká zahrada, prolézačky pro děti, venkovní i vnitřní bazén, sauna
-            a hlavně okolní příroda Krkonošských hor podtrhují neodolatelnou
-            atmosféru toho všeho tady mami pomoc zformuluj mi to.
-          </p>
-        </div>
-      </div>
-    </section>
+<!-- Z section -->
+<section class="section__info">
+  <div class="container grid additional-col">
+    <div class="info__text">
+      <p>
+        Díky své poloze je Myslivna přímo předurčena pro turistické výlety v
+        každém ročním období.
+      </p>
+      <p>Od krátkých procházek po nejbližším okolí po celodenní výlety.</p>
+    </div>
+    <div class="info__image">
+      <img class="info__image--one" src="img/vyhlednadmyslivnou02.JPG" alt="" />
+    </div>
+    <div class="info__image">
+      <img class="info__image--two" src="img/myslivna_cyclist.JPG" alt="" />
+    </div>
+    <div class="info__text">
+      <p>
+        Myslivna se nachází přímo na značené turistické trase, která je zároveň
+        cyklostezkou.
+      </p>
+      <p>
+        Po předchozí dohodě je možné zajistit vyjížďky na koních po blízkém
+        okolí, vyhlídkové lety letadlem, nebo vrtulníkem.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- those link cards -->
-    <section class="section__link-cards">
-      <div class="container grid cards">
-        <a class="card__link" href="#"
-          ><div class="card card--one">Galerie</div></a
-        >
-        <a class="card__link" href="#"
-          ><div class="card card--two">Rezervace</div></a
-        >
-        <a class="card__link" href="#"
-          ><div class="card card--three">Ceník</div></a
-        >
-      </div>
-    </section>
-
-    <!-- Z section -->
-    <section class="section__info">
-      <div class="container grid additional-col">
-        <div class="info__text">
-          <p>
-            Díky své poloze je Myslivna přímo předurčena pro turistické výlety v
-            každém ročním období.
-          </p>
-          <p>Od krátkých procházek po nejbližším okolí po celodenní výlety.</p>
-        </div>
-        <div class="info__image">
-          <img
-            class="info__image--one"
-            src="img/vyhlednadmyslivnou02.JPG"
-            alt=""
-          />
-        </div>
-        <div class="info__image">
-          <img class="info__image--two" src="img/myslivna_cyclist.JPG" alt="" />
-        </div>
-        <div class="info__text">
-          <p>
-            Myslivna se nachází přímo na značené turistické trase, která je
-            zároveň cyklostezkou.
-          </p>
-          <p>
-            Po předchozí dohodě je možné zajistit vyjížďky na koních po blízkém
-            okolí, vyhlídkové lety letadlem, nebo vrtulníkem.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container grid footer-col">
-        <div class="contact__col">
-          <p class="footer__heading">Kontakt</p>
-          <ul>
-            <li>
-              <a class="footer__link" href="tel:+420-123-456-789"
-                >+420 123 456 789</a
-              >
-            </li>
-            <li>
-              <a class="footer__link" href="mailto:rezervace@myslivna.cz"
-                >rezervace@myslivna.cz</a
-              >
-            </li>
-            <div class="footer__icons">
-              <li>
-                <a class="footer__icon"
-                  ><ion-icon name="logo-facebook"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a><ion-icon name="logo-instagram"></ion-icon></a>
-              </li>
-            </div>
-          </ul>
-        </div>
-
-        <div class="address__col">
-          <p class="footer__heading">Adresa</p>
-          <ul>
-            <li>Lenka Škrabálková</li>
-            <li>Myslivna 160</li>
-            <li>543 44 Černý Důl</li>
-          </ul>
-        </div>
-
-        <div class="footer-nav__col">
-          <p class="footer__heading">
-            <span class="footer__cta"><a href="#">Rezervace</a></span>
-          </p>
-          <ul class="footer__nav">
-            <li><a href="#top">Úvod</a></li>
-            <li>-</li>
-            <li><a href="#">Galerie</a></li>
-            <li>-</li>
-            <li><a href="#">Ceník</a></li>
-          </ul>
-        </div>
-        <p class="footer__copyright">
-          Copyright &copy; 2022 by
-          <a
-            class="footer__copyright--link"
-            href="https://github.com/evadob?tab=repositories"
-            >evadob</a
+<!-- footer -->
+<footer class="footer">
+  <div class="container grid footer-col">
+    <div class="contact__col">
+      <p class="footer__heading">Kontakt</p>
+      <ul>
+        <li>
+          <a class="footer__link" href="tel:+420-123-456-789"
+            >+420 123 456 789</a
           >
-        </p>
-      </div>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
-</html>
+        </li>
+        <li>
+          <a class="footer__link" href="mailto:rezervace@myslivna.cz"
+            >rezervace@myslivna.cz</a
+          >
+        </li>
+        <div class="footer__icons">
+          <li>
+            <a class="footer__icon"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="address__col">
+      <p class="footer__heading">Adresa</p>
+      <ul>
+        <li>Lenka Škrabálková</li>
+        <li>Myslivna 160</li>
+        <li>543 44 Černý Důl</li>
+      </ul>
+    </div>
+
+    <div class="footer-nav__col">
+      <p class="footer__heading">
+        <span class="footer__cta"><a href="#">Rezervace</a></span>
+      </p>
+      <ul class="footer__nav">
+        <li><a href="#top">Úvod</a></li>
+        <li>-</li>
+        <li><a href="#">Galerie</a></li>
+        <li>-</li>
+        <li><a href="#">Ceník</a></li>
+      </ul>
+    </div>
+    <p class="footer__copyright">
+      Copyright &copy; 2022 by
+      <a
+        class="footer__copyright--link"
+        href="https://github.com/evadob?tab=repositories"
+        >evadob</a
+      >
+    </p>
+  </div>
+</footer>
