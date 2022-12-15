@@ -39,6 +39,24 @@ p {
   margin: 5rem auto 2rem;
 }
 
+.list__icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.icon--sm {
+  font-size: 1rem;
+}
+
+.text--al-center {
+  text-align: center;
+}
+
+.text--al-left {
+  text-align: left;
+}
+
 .nav__cta {
   border: 1px solid #444;
   padding: 4px 8px;
@@ -57,10 +75,11 @@ p {
 
 .btn__reservation {
   display: block;
-  border: 1px solid #444;
   padding: 4px 8px;
+  color: #444;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  border: 1px solid #444;
 }
 .btn__reservation:hover {
   background-color: #444;
@@ -68,6 +87,38 @@ p {
 }
 .btn__reservation:visited {
   color: #444;
+}
+
+a.btn__reservation--sm {
+  display: inline-block;
+  margin-bottom: 5rem;
+  padding: 4px 8px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: 1px solid #444;
+}
+a.btn__reservation--sm:hover {
+  background-color: #444;
+  color: #fff !important;
+}
+a.btn__reservation--sm:visited {
+  color: #444;
+}
+
+.btn__form {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn__form .btn--submit {
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  border: 1px solid #444;
+  text-transform: uppercase;
+}
+
+.btn--center {
+  text-align: center;
 }
 
 .btn__mobile-nav {
@@ -183,7 +234,8 @@ p {
 .footer__icons {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  color: #444;
 }
 
 .footer__copyright {
@@ -296,6 +348,79 @@ p {
   max-width: 100%;
 }
 
+.table__heading {
+  text-align: center;
+}
+
+.table__heading--first {
+  margin-top: 3rem;
+}
+
+.prices__list-heading::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.01rem;
+  background-color: #444;
+  margin: 0.5rem auto;
+}
+
+.table--b {
+  margin: 1rem auto 3rem;
+  width: 40vw;
+  border-collapse: collapse;
+}
+
+.table--sm {
+  margin: 1rem auto 3rem;
+  width: 20vw;
+  border-collapse: collapse;
+}
+
+thead.thead_bcg-col {
+  background-color: #eee;
+}
+
+th,
+td {
+  padding: 0.5rem 0.5rem;
+}
+
+th.table--align-left {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.prices-list__container {
+  margin: 3rem auto;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.prices__list {
+  display: inline-block;
+  text-align: left;
+}
+
+.prices__list-item {
+  list-style-type: circle;
+}
+
+.prices__p {
+  text-align: center;
+}
+
+.prices__p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.prices__p:last-of-type {
+  margin-bottom: 3rem;
+}
+
 .contact {
   line-height: 1.4rem;
   max-width: 60%;
@@ -306,6 +431,10 @@ p {
   margin: 5rem auto 3rem auto;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+}
+
+.contact__first-col {
+  line-height: 1.6rem;
 }
 
 .list__heading--small {
@@ -341,8 +470,102 @@ p {
 
 .invoice-row {
   margin-bottom: 8rem;
+  font-size: 1rem;
 }
 
 .col--aligned {
   align-self: center;
+}
+
+.reservation__info {
+  margin: 3rem auto;
+  max-width: 40%;
+}
+
+.reservation__info:last-of-type {
+  margin-bottom: 5rem;
+}
+
+.form__container {
+  margin: 3rem auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  text-align: left;
+  justify-content: center;
+  align-items: start;
+}
+
+form {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form__field label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.form__field input,
+.form__field select {
+  min-width: 100%;
+  padding: 0.52rem;
+}
+
+.form__field textarea {
+  min-width: 100%;
+}
+
+.form__field {
+  margin-bottom: 1rem;
+}
+
+.form__greetings {
+  margin-top: 1rem;
+}
+
+.accomodation-cols {
+  gap: 3rem;
+  max-width: 85%;
+  margin: 5rem auto;
+}
+
+.accomodation-col {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.accomodation-col img {
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.accomodation-col p {
+  margin-bottom: 0.5rem;
+  padding-left: 0.8rem;
+}
+
+.accomodation__info {
+  margin: 3rem auto;
+  max-width: 40%;
+}
+
+.accomodation__info p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.accomodation__list {
+  padding-left: 2rem;
+}
+
+.accomodation-col li {
+  list-style-type: circle;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

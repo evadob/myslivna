@@ -18,10 +18,11 @@
 
 .btn__reservation {
   display: block;
-  border: 1px solid variables.$primary-dark;
   padding: 4px 8px;
+  color: variables.$primary-dark;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  border: 1px solid variables.$primary-dark;
   &:hover {
     background-color: variables.$primary-dark;
     color: #fff !important;
@@ -29,6 +30,39 @@
   &:visited {
     color: variables.$primary-dark;
   }
+}
+
+a.btn__reservation--sm {
+  display: inline-block;
+  margin-bottom: 5rem;
+  padding: 4px 8px;
+  color: variables.$primary-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: 1px solid variables.$primary-dark;
+  &:hover {
+    background-color: variables.$primary-dark;
+    color: #fff !important;
+  }
+  &:visited {
+    color: variables.$primary-dark;
+  }
+}
+
+// form button
+.btn__form {
+  text-align: center;
+  margin-top: 2rem;
+  .btn--submit {
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    border: 1px solid variables.$primary-dark;
+    text-transform: uppercase;
+  }
+}
+
+.btn--center {
+  text-align: center;
 }
 
 // mobile navigation

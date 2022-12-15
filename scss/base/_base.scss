@@ -29,3 +29,20 @@ p {
   text-align: center;
   margin: 5rem auto 2rem;
 }
+
+.list__icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.icon--sm {
+  font-size: 1rem;
+}
+
+.text--al-center {
+  text-align: center;
+}
+.text--al-left {
+  text-align: left;
+}

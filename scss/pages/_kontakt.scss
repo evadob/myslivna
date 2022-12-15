@@ -13,6 +13,10 @@
   justify-items: center;
 }
 
+.contact__first-col {
+  line-height: 1.6rem;
+}
+
 .list__heading--small {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -50,6 +54,7 @@
 // invoice contact
 .invoice-row {
   margin-bottom: 8rem;
+  font-size: 1rem;
 }
 .col--aligned {
   align-self: center;

@@ -120,6 +120,8 @@ Veškeré informace obdržíte na zadaný e-mail.
 
 ## **CENÍK**
 
+### prices updated in final html ver
+
 #### Termíny od 1.4. do 19.12.
 
 | Počet nocí | 1 -2   | 3 - 4  | 5 a více |

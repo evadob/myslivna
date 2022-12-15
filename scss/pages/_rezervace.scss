@@ -1,0 +1,48 @@
+@use "../abstracts/variables";
+
+.reservation__info {
+  margin: 3rem auto;
+  max-width: 40%;
+}
+.reservation__info:last-of-type {
+  margin-bottom: 5rem;
+}
+.form__container {
+  margin: 3rem auto;
+  max-width: 50%;
+  text-align: center;
+}
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  text-align: left;
+  justify-content: center;
+  align-items: start;
+}
+form {
+  font-family: variables.$font-form;
+}
+
+.form__field label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.form__field input,
+.form__field select {
+  min-width: 100%;
+  padding: 0.52rem;
+}
+.form__field textarea {
+  min-width: 100%;
+}
+.form__field {
+  margin-bottom: 1rem;
+}
+
+.form__greetings {
+  margin-top: 1rem;
+}

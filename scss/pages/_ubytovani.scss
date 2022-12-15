@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+
+// main grid
+.accomodation-cols {
+  gap: 3rem;
+  max-width: 85%;
+  margin: 5rem auto;
+}
+
+// columns
+.accomodation-col {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.accomodation-col img {
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+.accomodation-col p {
+  margin-bottom: 0.5rem;
+  padding-left: 0.8rem;
+}
+
+// info
+.accomodation__info {
+  margin: 3rem auto;
+  max-width: 40%;
+}
+.accomodation__info p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+// list
+.accomodation__list {
+  padding-left: 2rem;
+}
+.accomodation-col li {
+  list-style-type: circle;
+  line-height: 1.5rem;
+}

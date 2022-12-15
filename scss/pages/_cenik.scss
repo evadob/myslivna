@@ -1,0 +1,66 @@
+@use "../abstracts/variables";
+
+.table__heading {
+  text-align: center;
+}
+.table__heading--first {
+  margin-top: 3rem;
+}
+.prices__list-heading::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.01rem;
+  background-color: variables.$primary-dark;
+  margin: 0.5rem auto;
+}
+.table--b {
+  margin: 1rem auto 3rem;
+  width: 40vw;
+  border-collapse: collapse;
+}
+.table--sm {
+  margin: 1rem auto 3rem;
+  width: 20vw;
+  border-collapse: collapse;
+}
+
+thead.thead_bcg-col {
+  background-color: #eee;
+}
+th,
+td {
+  padding: 0.5rem 0.5rem;
+}
+th.table--align-left {
+  text-align: left;
+}
+td {
+  text-align: center;
+}
+
+// .prices__list-heading
+.prices-list__container {
+  margin: 3rem auto;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.prices__list {
+  display: inline-block;
+  text-align: left;
+}
+
+.prices__list-item {
+  list-style-type: circle;
+}
+
+.prices__p {
+  text-align: center;
+}
+.prices__p:first-of-type {
+  margin-bottom: 1rem;
+}
+.prices__p:last-of-type {
+  margin-bottom: 3rem;
+}

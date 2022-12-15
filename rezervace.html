@@ -1,0 +1,96 @@
+---
+layout: layouts/template.njk
+title: Rezervace
+---
+
+<h2 class="page__heading">Rezervace</h2>
+
+<div class="reservation__info text--al-center">
+  <p>
+    Pokud máte jakékoli dotazy ohledně ubytování či vaší rezervace, neváhejte se
+    na nás obrátit na telefonním čísle +420 603 498 984 či e-mailu
+    info@myslivna.cz.
+  </p>
+</div>
+
+<div class="form__container">
+  <form class="two-cols">
+    <div>
+      <div class="form__field">
+        <label>Jméno</label>
+        <input type="text" placeholder="Vaše jméno" required />
+      </div>
+      <div class="form__field">
+        <label>Příjmení</label>
+        <input type="text" placeholder="Vaše příjmení" required />
+      </div>
+      <div class="form__field">
+        <label>E-mail</label>
+        <input type="email" placeholder="Váš e-mail" required />
+      </div>
+      <div class="form__field">
+        <label>Telefonní číslo</label>
+        <input type="number" placeholder="Vaše telefonní číslo" required />
+      </div>
+      <div class="form__field">
+        <label for="prijezd">Datum příjezdu</label>
+        <input type="date" id="prijezd" name="prijezd" />
+      </div>
+      <div class="form__field">
+        <label for="odjezd">Datum odjezdu</label>
+        <input type="date" id="odjezd" name="odjezd" />
+      </div>
+    </div>
+
+    <div>
+      <div class="form__field">
+        <label for="pokoj">Vyberte pokoj</label>
+        <select name="pokoj" id="pokoj" required>
+          <option value="">Pokoje</option>
+          <option value="apartman">Apartmán</option>
+          <option value="triluzak">Třílůžkový pokoj</option>
+          <option value="ctyrluzak">Čtyřlůžkový pokoj</option>
+        </select>
+      </div>
+
+      <div class="form__field">
+        <label>Počet dospělých</label>
+        <input type="number" placeholder="Počet dospělých" required />
+      </div>
+      <div class="form__field">
+        <label>Počet dětí do 10 let</label>
+        <input type="number" placeholder="Počet dětí do 10 let" required />
+      </div>
+
+      <div class="form__field">
+        <label for="pristylky">Přistýlka/dětská postýlka</label>
+        <select name="pristylky" id="pristylky" required>
+          <option value="">Ne</option>
+          <option value="pristylka">Přistýlka</option>
+          <option value="postylka">Dětská postýlka</option>
+          <option value="pristylkaipostylka">
+            Přistýlka i dětská postýlka
+          </option>
+        </select>
+      </div>
+
+      <div class="form__field">
+        <label>Zpráva</label>
+        <textarea
+          name="dalsipozadavky"
+          placeholder="Vaše přání či dotazy..."
+          rows="3"
+        ></textarea>
+        <div class="btn__form">
+          <button class="btn--submit">Rezervovat</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="reservation__info text--al-center">
+  <p>Check-in po 15:00 / Check-out do 10:00</p>
+  <p>V případě jiných požadavků je vždy možná osobní domluva.</p>
+  <p class="travel__greetings form__greetings">Těšíme se na vaši návštěvu!</p>
+</div>
