@@ -103,7 +103,7 @@
   max-width: 100%;
 }
 
-@media (max-width: variables.$layout-breakpoint-md) {
+@media screen and (max-width: variables.$layout-breakpoint-md) {
   .section__about {
     padding: 0 2rem;
   }
@@ -114,7 +114,7 @@
     max-width: 95%;
   }
 }
-@media (max-width: variables.$layout-breakpoint-cards) {
+@media screen and (max-width: variables.$layout-breakpoint-cards) {
   .cards {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -132,7 +132,7 @@
     background-size: cover;
   }
 }
-@media (max-width: variables.$layout-breakpoint-footer) {
+@media screen and (max-width: variables.$layout-breakpoint-footer) {
   .additional-col {
     grid-template-columns: 1fr;
     row-gap: 1rem;
@@ -144,5 +144,10 @@
   .info__text {
     padding: 0.5rem;
     margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-cards-sm) {
+  .card {
+    padding: 4rem 3rem;
   }
 }

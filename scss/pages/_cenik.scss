@@ -91,13 +91,9 @@ td {
     max-width: 80%;
   }
 }
-@media screen and (max-width: variables.$layout-breakpoint-sm) {
-  .table--b {
-    margin: 1rem auto 3rem;
-    width: 70vw;
-  }
+@media screen and (max-width: variables.$layout-breakpoint-prices) {
+  .table--b,
   .table--sm {
-    margin: 1rem auto 3rem;
-    width: 50vw;
+    min-width: 85vw;
   }
 }

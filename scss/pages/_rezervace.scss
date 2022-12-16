@@ -60,3 +60,11 @@ form {
     margin-top: 2rem;
   }
 }
+@media screen and (max-width: variables.$layout-breakpoint-prices) {
+  .reservation__info {
+    max-width: 80%;
+  }
+  .two-cols {
+    grid-template-columns: 1fr;
+  }
+}

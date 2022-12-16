@@ -31,6 +31,11 @@
     color: variables.$primary-dark;
   }
 }
+@media screen and (max-width: variables.$layout-breakpoint-prices) {
+  .btn__reservation {
+    margin-top: 2rem;
+  }
+}
 
 a.btn__reservation--sm {
   display: inline-block;
@@ -58,6 +63,11 @@ a.btn__reservation--sm {
     background-color: #fff;
     border: 1px solid variables.$primary-dark;
     text-transform: uppercase;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-prices) {
+  .btn__form {
+    margin-top: 3rem;
   }
 }
 

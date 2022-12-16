@@ -95,6 +95,11 @@ p {
   color: #444;
 }
 
+@media screen and (max-width: 37.5em) {
+  .btn__reservation {
+    margin-top: 2rem;
+  }
+}
 a.btn__reservation--sm {
   display: inline-block;
   margin-bottom: 5rem;
@@ -123,6 +128,11 @@ a.btn__reservation--sm:visited {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 37.5em) {
+  .btn__form {
+    margin-top: 3rem;
+  }
+}
 .btn--center {
   text-align: center;
 }
@@ -219,6 +229,11 @@ a.btn__reservation--sm:visited {
   left: 10%;
 }
 
+@media screen and (max-width: 30.625em) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+}
 .footer-col {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -368,7 +383,7 @@ a.btn__reservation--sm:visited {
   max-width: 100%;
 }
 
-@media (max-width: 58.75em) {
+@media screen and (max-width: 58.75em) {
   .section__about {
     padding: 0 2rem;
   }
@@ -380,7 +395,7 @@ a.btn__reservation--sm:visited {
     max-width: 95%;
   }
 }
-@media (max-width: 53.75em) {
+@media screen and (max-width: 53.75em) {
   .cards {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -393,7 +408,7 @@ a.btn__reservation--sm:visited {
     background-size: cover;
   }
 }
-@media (max-width: 43.75em) {
+@media screen and (max-width: 43.75em) {
   .additional-col {
     grid-template-columns: 1fr;
     row-gap: 1rem;
@@ -405,6 +420,11 @@ a.btn__reservation--sm:visited {
   .info__text {
     padding: 0.5rem;
     margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 30.625em) {
+  .card {
+    padding: 4rem 3rem;
   }
 }
 .gallery {
@@ -522,14 +542,10 @@ td {
     max-width: 80%;
   }
 }
-@media screen and (max-width: 40em) {
-  .table--b {
-    margin: 1rem auto 3rem;
-    width: 70vw;
-  }
-  .table--sm {
-    margin: 1rem auto 3rem;
-    width: 50vw;
+@media screen and (max-width: 37.5em) {
+  .table--b,
+.table--sm {
+    min-width: 85vw;
   }
 }
 .contact {
@@ -608,6 +624,21 @@ td {
     max-width: 90%;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .contact__2-cols {
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+  .contact__first-col {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 36.25em) {
+  .map--sm {
+    margin: 0;
+    padding-top: 2rem;
+  }
+}
 .reservation__info {
   margin: 3rem auto;
   max-width: 40%;
@@ -672,6 +703,14 @@ form {
 @media screen and (max-width: 43.75em) {
   .form__greetings {
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .reservation__info {
+    max-width: 80%;
+  }
+  .two-cols {
+    grid-template-columns: 1fr;
   }
 }
 .accomodation-cols {
