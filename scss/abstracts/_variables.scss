@@ -4,10 +4,19 @@ $primary-dark: #444;
 $gradient-dark: rgba(0, 0, 0, 0.35);
 $gradient-light: rgba(126, 126, 126, 0.35);
 
+$cards-gradient-dark: rgba(255, 255, 255, 0.867);
+$cards-gradient-light: rgba(255, 255, 255, 0.643);
+
 // fonts
 $font-primary: "Forum", cursive;
 $font-form: "Open Sans", sans-serif;
 
-// font-sizes
+// media queries
+$layout-breakpoint-sm: 40em;
+$layout-breakpoint-footer: 43.75em;
+$layout-breakpoint-header: 50em;
+$layout-breakpoint-cards: 53.75em;
+$layout-breakpoint-md: 58.75em;
+$layout-breakpoint-l: 70em;
 
-// spacing
+// @media screen and (max-width: variables.$layout-breakpoint-header)

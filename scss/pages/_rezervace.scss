@@ -46,3 +46,17 @@ form {
 .form__greetings {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: variables.$layout-breakpoint-md) {
+  .reservation__info {
+    max-width: 50%;
+  }
+  .form__container {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-footer) {
+  .form__greetings {
+    margin-top: 2rem;
+  }
+}

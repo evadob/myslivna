@@ -9,3 +9,10 @@
   display: block;
   max-width: 100%;
 }
+
+@media (max-width: variables.$layout-breakpoint-md) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

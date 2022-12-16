@@ -45,3 +45,21 @@
   margin: 1rem auto;
   font-size: 0.8rem;
 }
+
+@media screen and (max-width: variables.$layout-breakpoint-footer) {
+  .footer-col {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    justify-items: center;
+    padding-top: 2rem;
+    background-image: linear-gradient(
+        variables.$cards-gradient-dark,
+        variables.$cards-gradient-light
+      ),
+      url(/img/myslivna_louka.JPG);
+    background-size: cover;
+  }
+  .footer__icons {
+    gap: 2rem;
+  }
+}

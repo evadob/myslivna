@@ -46,9 +46,12 @@
 }
 
 // map
-.map {
+.map--b {
   margin: 5rem auto;
   text-align: center;
+}
+.map--sm {
+  display: none;
 }
 
 // invoice contact
@@ -58,4 +61,21 @@
 }
 .col--aligned {
   align-self: center;
+}
+
+@media (max-width: variables.$layout-breakpoint-md) {
+  .map--b {
+    display: none;
+  }
+  .map--sm {
+    display: block;
+    max-width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-footer) {
+  .contact {
+    max-width: 90%;
+  }
 }

@@ -64,3 +64,40 @@ td {
 .prices__p:last-of-type {
   margin-bottom: 3rem;
 }
+
+@media screen and (max-width: variables.$layout-breakpoint-md) {
+  .table--b {
+    margin: 1rem auto 3rem;
+    width: 50vw;
+  }
+  .table--sm {
+    margin: 1rem auto 3rem;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-l) {
+  .table--sm {
+    margin: 1rem auto 3rem;
+    width: 35vw;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-footer) {
+  .table--sm {
+    margin: 1rem auto 3rem;
+    width: 45vw;
+  }
+  .prices__p {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: variables.$layout-breakpoint-sm) {
+  .table--b {
+    margin: 1rem auto 3rem;
+    width: 70vw;
+  }
+  .table--sm {
+    margin: 1rem auto 3rem;
+    width: 50vw;
+  }
+}

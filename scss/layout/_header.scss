@@ -26,3 +26,15 @@
 .img-logo {
   width: 1.6rem;
 }
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: variables.$primary-dark;
+}
+
+@media screen and (max-width: variables.$layout-breakpoint-cards) {
+  .nav__list {
+    margin: 1rem 1rem;
+  }
+}

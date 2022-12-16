@@ -11,15 +11,18 @@
 .accomodation-col {
   max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .accomodation-col img {
   display: block;
-  margin-bottom: 1rem;
   max-width: 100%;
 }
 .accomodation-col p {
   margin-bottom: 0.5rem;
   padding-left: 0.8rem;
+}
+.heading--sm {
+  margin-top: 1rem;
 }
 
 // info
@@ -38,4 +41,35 @@
 .accomodation-col li {
   list-style-type: circle;
   line-height: 1.5rem;
+}
+
+// rooms
+.room__info {
+  text-align: center;
+  margin-top: 1rem;
+}
+.img--overflow {
+  overflow: hidden;
+}
+.rooms__img {
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: variables.$layout-breakpoint-md) {
+  .accomodation__info {
+    max-width: 80%;
+  }
+  .accomodation__other-rooms {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: variables.$layout-breakpoint-cards) {
+  .accomodation-cols {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
 }

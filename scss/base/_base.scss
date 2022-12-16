@@ -46,3 +46,10 @@ p {
 .text--al-left {
   text-align: left;
 }
+
+@media (max-width: variables.$layout-breakpoint-md) {
+  .container {
+    max-width: 200rem;
+    padding: 0 1rem;
+  }
+}
