@@ -633,12 +633,6 @@ td {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 36.25em) {
-  .map--sm {
-    margin: 0;
-    padding-top: 2rem;
-  }
-}
 .reservation__info {
   margin: 3rem auto;
   max-width: 40%;
