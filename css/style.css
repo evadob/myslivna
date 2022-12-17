@@ -177,6 +177,23 @@ a.btn__reservation--sm:visited {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.menu__checkbox {
+  display: none;
+}
+
+.menu__toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.logo__nav--sm {
+  display: none;
+}
+
+.nav__cta--sm {
+  display: none;
+}
+
 .nav__list {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -200,15 +217,77 @@ a.btn__reservation--sm:visited {
   width: 1.6rem;
 }
 
-.burger div {
-  width: 25px;
-  height: 5px;
-  background-color: #444;
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
 }
 
 @media screen and (max-width: 53.75em) {
   .nav__list {
     margin: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 46.875em) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+  }
+  .menu__toggler {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+  }
+  .nav__list {
+    display: none;
+  }
+  .checkbox {
+    display: block;
+  }
+  .menu__checkbox .nav__list {
+    display: none;
+  }
+  .nav__item {
+    margin: 1rem;
+  }
+  .nav__link {
+    padding: 1rem;
+  }
+  .nav__link:hover {
+    color: rgba(126, 126, 126, 0.35) !important;
+  }
+  .menu__logo {
+    display: none;
+  }
+  .logo__nav--sm {
+    display: inline-block;
+  }
+  .nav__cta {
+    border: none;
+  }
+  .nav__cta:hover {
+    background-color: #fff;
+    color: rgba(126, 126, 126, 0.35) !important;
+  }
+  .menu__checkbox:checked ~ .nav__list {
+    display: block;
+  }
+  .menu__checkbox:checked ~ .logo__nav--sm {
+    display: none;
+  }
+  .menu__checkbox:checked ~ .nav__cta--sm {
+    display: none;
+  }
+  .nav__cta--sm {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .nav__cta--sm:hover {
+    color: #444 !important;
+  }
+  .nav__cta--sm:visited {
+    color: #444;
   }
 }
 .hero {

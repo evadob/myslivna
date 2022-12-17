@@ -1,17 +1,33 @@
 <header class="header">
-  <nav class="header__nav container nav--b">
+  <nav class="header__nav container menu">
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+    <label for="menu-checkbox" class="menu__toggler">Menu</label>
+    <!-- menu__list -->
     <ul class="nav__list">
-      <li><a class="nav__link" href="/">Úvod</a></li>
-      <li><a class="nav__link" href="/ubytovani/">Ubytování</a></li>
-      <li><a class="nav__link" href="/galerie/">Galerie</a></li>
-      <li>
+      <!-- menu__item, menu__link -->
+      <li class="nav__item"><a class="nav__link" href="/">Úvod</a></li>
+      <li class="nav__item">
+        <a class="nav__link" href="/ubytovani/">Ubytování</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/galerie/">Galerie</a>
+      </li>
+      <li class="nav__item menu__logo">
         <a class="nav__link nav__logo" href="/"
           ><img class="img-logo" src="/img/logo.svg" alt=""
         /></a>
       </li>
-      <li><a class="nav__link" href="/cenik/">Ceník</a></li>
-      <li><a class="nav__link" href="/kontakt/">Kontakt</a></li>
-      <li><a class="nav__link nav__cta" href="/rezervace/">Rezervace</a></li>
+      <li class="nav__item"><a class="nav__link" href="/cenik/">Ceník</a></li>
+      <li class="nav__item">
+        <a class="nav__link" href="/kontakt/">Kontakt</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__cta" href="/rezervace/">Rezervace</a>
+      </li>
     </ul>
+    <a class="nav__link nav__logo logo__nav--sm" href="/"
+      ><img class="img-logo" src="/img/logo.svg" alt=""
+    /></a>
+    <a class="nav__link nav__cta--sm" href="/rezervace/">Rezervace</a>
   </nav>
 </header>
